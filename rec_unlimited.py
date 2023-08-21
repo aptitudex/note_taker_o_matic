@@ -72,9 +72,10 @@ def make_recording():
                         channels=args.channels, subtype=args.subtype) as file:
             with sd.InputStream(samplerate=args.samplerate, device=args.device,
                                 channels=args.channels, callback=callback):
-                print('#' * 80)
-                print('press Ctrl+C to stop the recording')
-                print('#' * 80)
+                print("")
+                print('-' * 80)
+                print('Press Ctrl+C to stop the recording 💾')
+                print('-' * 80)
                 while True:
                     file.write(q.get())
     except KeyboardInterrupt:
