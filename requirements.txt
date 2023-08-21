@@ -1,0 +1,6 @@
+whisper
+sounddevice
+soundfile
+queue
+datetime
+numpy
